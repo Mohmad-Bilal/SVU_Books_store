@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVU Library store</title>
+    <!--link to css-->
+    <link rel="stylesheet" href="style.css">
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <!--navbar-->
+    <header>
+        <!--nav container-->
+        <div class="nav container">
+            <!--menu icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--logo-->
+            <a href="#" class="logo">book<span>point</span></a>
+            <!--nav list-->
+            <ul class="navbar">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#blog">Our Blog</a></li>
+            </ul>
+            <!--search icone-->
+            <i class='bx bx-search'id="search-icon"></i>
+            <!--search box-->
+            <div class="search-box container">
+                <input type="search" name="" id="" placeholder="search here...">
+            </div>
+            
+        </div>
+    </header>
+    <!--home-->
+    <section class="home" id="home">
+        <div class="home-text">
+                <h1>WE HAVE EVERY THINK<br>YOUR<span>book</span>NEED</h1>
+                <p>get whatever you want <br> all what you need is here</p>
+                <!--home button-->
+                <a href="#" class="btn">Discover now</a>
+        </div>
+    </section>
+    <!--books section-->
+    <section class="books" id="books">
+        <div class="heading">
+            <span>All books</span>
+            <h2>we have all type books</h2>
+            <p>know your self better with your books types</p>
+        </div>
+        <!--books container-->
+        <div class="book-container container">
+            <!--box 1-->
+            <div class="box">
+                <img src="img/book0.jpg" alt="">
+                <h2>svu 1 book</h2>
+            </div>
+            <!--box 2-->
+            <div class="box">
+                    <img src="img/book1.jpg" alt="">
+                    <h2>svu 2 book</h2>
+                </div>
+                <!--box 3-->
+            <div class="box">
+                    <img src="img/book2.jpg" alt="">
+                    <h2>svu 3 book</h2>
+                </div>
+                <!--box 4-->
+            <div class="box">
+                    <img src="img/book3.jpg" alt="">
+                    <h2>svu 4 book</h2>
+                </div>
+                <!--box 5-->
+            <div class="box">
+                    <img src="img/book4.jpg" alt="">
+                    <h2>svu 5 book</h2>
+                </div>
+                <!--box 6-->
+            <div class="box">
+                    <img src="img/book5.jpg" alt="">
+                    <h2>svu 6 book</h2>
+                </div>
+        </div>
+    </section>
+    
+    <!--about-->
+    <section class="about container" id="about">
+        <div class="about-img">
+                <img src="img/book3.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>About Us</span>
+            <h2>Reliable informtion <br> you will find all the books you need with us</h2>
+        <br>
+            <!-- about button-->
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <!--parts section-->
+    <section class="parts" id="parts">
+        <div class="heading">
+            <span>What We Offer</span>
+            <h2>Our Books Is Always Excellent</h2>
+            <p>Best books from the best library</p>
+        </div>
+        <!--parts container-->
+<div class="parts-container container">
+    <!--box 1-->
+    <div class="box">
+        <img src="img/part1.jpg" alt="">
+        <h3>BWP 401 books</h3>
+        <span>$10</span>
+        <button class="btn add-to-cart">Buy Now</button>
+        <a href="#" class="details">View Details</a>
+    </div>
+    <!--box 2-->
+    <div class="box">
+        <img src="img/part2.jpg" alt="">
+        <h3>BWP 501 books</h3>
+        <span>$30</span>
+        <button class="btn add-to-cart">Buy Now</button>
+        <a href="#" class="details">View Details</a>
+    </div>
+    <!--box 3-->
+    <div class="box">
+        <img src="img/part3.jpg" alt="">
+        <h3>BPG 401 books</h3>
+        <span>$25</span>
+        <button class="btn add-to-cart">Buy Now</button>
+        <a href="#" class="details">View Details</a>
+    </div>
+    <!--box 4-->
+    <div class="box">
+        <img src="img/part4.jpg" alt="">
+        <h3>BPG 402 books</h3>
+        <span>$50</span>
+        <button class="btn add-to-cart">Buy Now</button>
+        <a href="#" class="details">View Details</a>
+    </div>
+    <!--box 5-->
+    <div class="box">
+        <img src="img/part5.jpg" alt="">
+        <h3>GTW 301 books</h3>
+        <span>$60</span>
+        <button class="btn add-to-cart">Buy Now</button>
+        <a href="#" class="details">View Details</a>
+    </div>
+    <!--box 6-->
+    <div class="box">
+        <img src="img/part6.jpg" alt="">
+        <h3>SVU tools for recording</h3>
+        <span>$50</span>
+        <button class="btn add-to-cart">Buy Now</button>
+        <a href="#" class="details">View Details</a>
+    </div>
+</div>
+<!-- cart -->
+<div class="cart-summary">
+    <h2>Cart Summary</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-total">
+        <span>Total:</span>
+        <span id="total-price">$0</span>
+    </div>
+<!-- user shipping info -->
+    <h2>Shipping Information</h2>
+    <div class="shipping-form">
+        <input type="text" id="full-name" placeholder="Full Name">
+        <input type="number" id="age" placeholder="Age">
+        <input type="text" id="address" placeholder="Address">
+        <input type="text" id="credit-card" placeholder="Credit Card Information">
+    </div>
+
+    <button class="btn checkout">Checkout</button>
+</div>
+
+
+
+
+    </section>
+    <!--blog container-->
+    <section class="blog" id="blog">
+            <div class="heading">
+                    <span> blog & news</span>
+                    <h2>Blog content</h2>
+                    <p>Discover the unknow to the horizen and beyond and to the good knoledge</p>
+                </div>
+                <!--blog container-->
+                <div class="blog-container container">
+                    <!--box 1-->
+                    <div class="box">
+                        <img src="img/book5.jpg" alt="">
+                        <span>april 27 2023</span>
+                        <h3>how to get perfect book</h3>
+                        <p>Discover the unknow to the horizen and beyond and to the good knoledge</p>
+                        <a href="#" class="blog-btn">Read More<box-icon name='right-arrow-alt'></box-icon></a>
+                    </div>
+                    <!--box 2-->
+                    <div class="box">
+                            <img src="img/book2.jpg" alt="">
+                            <span>april 27 2023</span>
+                            <h3>how to get perfect book</h3>
+                            <p>Discover the unknow to the horizen and beyond and to the good knoledge</p>
+                            <a href="#" class="blog-btn">Read More<box-icon name='right-arrow-alt'></box-icon></a>
+                        </div>
+                        <!--box 3-->
+                    <div class="box">
+                            <img src="img/book3.jpg" alt="">
+                            <span>april 27 2023</span>
+                            <h3>how to get perfect book</h3>
+                            <p>Discover the unknow to the horizen and beyond and to the good knoledge</p>
+                            <a href="#" class="blog-btn">Read More<box-icon name='right-arrow-alt'></box-icon></a>
+                        </div>
+                </div>
+    </section>
+    <!--footer-->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">book<span>point</span></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>page</h3>
+                <a href="#">Home</a>
+                <a href="#">books</a>
+                <a href="#">parts</a>
+                <a href="#">sales</a>
+            </div>
+            <div class="footer-box">
+                    <h3>legal</h3>
+                    <a href="#">privacy</a>
+                    <a href="#">Refound policy</a>
+                    <a href="#">cookie policy</a>
+                </div>
+                <div class="footer-box">
+                        <h3>contact</h3>
+                        <span>SYRIAN ARAB REPUBLIC</span>
+                        <p>damscus</p>
+                        <p>latakia</p>
+                        <p>homs</p>
+                    </div>
+        </div>
+    </section>
+    <!--copyright-->
+    <div class="copyright">
+        <p>&#169; bookright all right reserved</p>
+    </div>
+    <!--link to js-->
+    <script src="main.js"></script>
+    
+</body>
+</html>
